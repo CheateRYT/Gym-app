@@ -1,6 +1,7 @@
+@import './reset';
 @import '../node_modules/bootstrap/scss/bootstrap';
-@import "../src/_font";
+@import "./font";
 
-*{
-  color: fff;
-}
+//Components styles are importing;
+
+@import "./components/app/app";

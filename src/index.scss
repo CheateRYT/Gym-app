@@ -6,6 +6,11 @@
 
 @import "./components/app/app";
 
-* {
-  font-family: 'Passion One', sans-serif !important;
+*, *:after, *:before {
+  font-family: 'Arvo', sans-serif !important;
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

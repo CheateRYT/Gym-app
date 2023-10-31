@@ -3,7 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(https://fonts.googleapis.com/css?family=Passion+One:regular,700,900);
+@import url(https://fonts.googleapis.com/css?family=Arvo:regular,italic,700,700italic);
 html, body, div, span, applet, object, iframe,
 h1,
 .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, blockquote, pre,
@@ -13426,8 +13426,19 @@ header {
   padding-right: 136px;
   padding-top: 5px;
 }
+@media screen and (max-width: 600px) {
+  header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 header .header__logo {
-  max-width: 100%;
   height: 100% !important;
 }
 header .nav {
@@ -13455,6 +13466,18 @@ header .nav .nav__list {
   gap: 153px;
   row-gap: 15px;
 }
+@media screen and (max-width: 600px) {
+  header .nav .nav__list {
+    gap: 40px;
+    row-gap: 8px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header .nav .nav__list {
+    gap: 70px;
+    row-gap: 11px;
+  }
+}
 header .nav .nav__list .nav__item {
   margin: 0;
   padding: 0;
@@ -13466,15 +13489,89 @@ header .nav .nav__list .nav__item .nav__link {
 }
 @media screen and (max-width: 600px) {
   header .nav .nav__list .nav__item .nav__link {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   header .nav .nav__list .nav__item .nav__link {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
-* {
-  font-family: "Passion One", sans-serif !important;
+.exercises .exercises__title {
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+  margin-bottom: 44px;
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.exercises .muscle-groups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.exercises .muscle-groups .muscle-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 51px;
+}
+.exercises .muscle-groups .muscle-group .muscle-group__title {
+  padding-right: 45px;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.exercises .muscle-groups .muscle-group .muscle-group__selector {
+  height: 100%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(./img/arrow.png) no-repeat right center;
+}
+.exercises .muscle-groups .muscle-group .muscle-group__selector option {
+  color: #000;
+  text-align: center;
+  font-family: Passion One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (max-width: 600px) {
+  .exercises .muscle-groups .muscle-group .muscle-group__selector option {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .exercises .muscle-groups .muscle-group .muscle-group__selector option {
+    font-size: 15px;
+  }
+}
+
+*, *:after, *:before {
+  font-family: "Arvo", sans-serif !important;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
